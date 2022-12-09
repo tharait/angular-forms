@@ -1,0 +1,22 @@
+<div class="container">
+  <form>
+    <h1>Angular Form</h1>
+    <div class="form-group">
+      <label for="model">Model</label><br />
+      <select class="form-control" id="model">
+        <option *ngFor="let mod of models" [value]="mod">{{ mod }}</option>
+      </select>
+    </div>
+    <br />
+
+    <div class="form-group">
+      <label for="color">Color</label><br />
+      <select class="form-control" id="model">
+        <option *ngFor="let col of colors" [value]="col">{{ col }}</option>
+      </select>
+    </div>
+    <br />
+
+    <button type="submit" class="btn-sub">Submit</button>
+  </form>
+</div>
